@@ -197,7 +197,7 @@ def handle_verses():
 def parse(versetext):
     index = versetext.split(":")
     verses = []
-    #print("parsed verse: ", index)
+    print("parsed verse: ", index)
     if "," in index[1]:
         verseparts = []
         versepart_list = index[1].split(",")

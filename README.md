@@ -44,3 +44,10 @@ verses -l en -s "pray" -v 2:1-100, 3:1-30
 5: (2:83) And [recall] when We took the covenant from the Children of Israel, [enjoining upon them], "Do not worship except Allah; and to parents do good and to relatives, orphans, and the needy. And speak to people good [words] and establish prayer and give zakah." Then you turned away, except a few of you, and you were refusing.
 6: (2:89) And when there came to them a Book from Allah confirming that which was with them - although before they used to pray for victory against those who disbelieved - but [then] when there came to them that which they recognized, they disbelieved in it; so the curse of Allah will be upon the disbelievers.
 ```
+
+## Installation
+
+To install it on a unix system simply run
+```bash
+sudo make install
+```
