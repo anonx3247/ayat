@@ -19,4 +19,4 @@ About transliteration:
 Bold letters are not pronounced, underlined consonants are hard consonants, 
  and underlined vowels are long vowels
 ```
-like in: a**l**rra_h_m_a_n
+like in: a**l**rra <ins>h</ins>m <ins>a</ins>n
