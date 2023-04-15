@@ -163,6 +163,16 @@ def handle_verses():
         if arg == "-v":
             for j in range(i+1, len(args)):
                 verses.append(args[j])
+
+    if verses == ['all']:
+        verses = quran.readlines()
+        quran.seek(0)
+        requested_verses = []
+        for verse in verses:
+            if verse[0] != "#":
+                formatted_verse = re.sub(r"([0-9]*)\|([0-9]*)\|", r"(\1:\2)", verse).strip()
+                requested_verses.append(formatted_verse)
+        return requested_verses
                 # print("appended verse: ", args[j])
         
     # get and open the required quran file
@@ -182,14 +192,13 @@ def handle_verses():
             
 
     # search quran for selected verses
+    verses = quran.readlines()
+    quran.seek(0)
     for selected_verse in parsed_verses:
-        verses = quran.readlines()
         for verse in verses:
-            # if ( selected_verse[0] + "|" + selected_verse[1] + "|" ) in verse:
             if re.match("^" + selected_verse[0] + "\|" + selected_verse[1] + "\|" + ".*", verse):
                 formatted_verse = re.sub("[0-9]*\|[0-9]*\|", "(" + selected_verse[0] + ":" + selected_verse[1] + ") ", verse).strip()
                 requested_verses.append(formatted_verse)
-            quran.seek(0)
     return requested_verses
 
 
@@ -197,7 +206,7 @@ def handle_verses():
 def parse(versetext):
     index = versetext.split(":")
     verses = []
-    print("parsed verse: ", index)
+    #print("parsed verse: ", index)
     if "," in index[1]:
         verseparts = []
         versepart_list = index[1].split(",")
@@ -241,7 +250,7 @@ def help_menu():
     print("-h                  help menu")
     print("-l [language code]  language selection (ex: 'verses -l en')")
     print("-t                  english transliteration")
-    print("-v   [verses]       verse list (ex: 'verses -v 1:23 6:24 5:4-7')")
+    print("-v   [verses]       verse list (ex: 'verses -v 1:23 6:24 5:4-7') or 'all' to have entire corpus")
     print("-s [query]          search for query (can be regex)")
     print("-sc [query]         search for query (can be regex)" + color.GREEN + " (colored)" + color.END)
     print("\n")

@@ -1,9 +1,9 @@
 run:
-	cp verses.py verses
-	chmod +x verses
-	chmod +x fzverse
+	cp ayat.py ayat
+	chmod +x ayat
+	chmod +x fzayat
 install:
-	cp verses.py /usr/local/bin/verses
-	chmod +x /usr/local/bin/verses
-	cp fzverse /usr/local/bin/fzverse
-	chmod +x /usr/local/bin/fzverse
+	cp ayat.py /usr/local/bin/ayat
+	chmod +x /usr/local/bin/ayat
+	cp fzayat /usr/local/bin/fzayat
+	chmod +x /usr/local/bin/fzayat
