@@ -35,6 +35,8 @@ pip3 install wget
 
 ```bash
 verses -l en -s "pray" -v 2:1-100, 3:1-30
+```
+```
 1: (2:3) Who believe in the unseen, establish prayer, and spend out of what We have provided for them,
 2: (2:43) And establish prayer and give zakah and bow with those who bow [in worship and obedience].
 3: (2:45) And seek help through patience and prayer, and indeed, it is difficult except for the humbly submissive [to Allah]
