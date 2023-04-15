@@ -20,3 +20,13 @@ Bold letters are not pronounced, underlined consonants are hard consonants,
  and underlined vowels are long vowels
 ```
 like in: a**l**rra <ins>h</ins>m <ins>a</ins>n
+
+A great thanks to [Tanzil](tanzil.net) for their text transliterations and translations which this script downloads from
+
+## Dependencies
+
+You will need the `wget` python package for downloading to work:
+
+```bash
+pip3 install wget
+```
