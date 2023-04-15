@@ -1,12 +1,12 @@
-# verses
+# ayat
 A simple python script which downloads and retrieves passages from the quran with multiple languages and transliteration. It also has searh abilities
 
 ```bash
-Welcome to verses
+Welcome to ayat
 -h                  help menu
--l [language code]  language selection (ex: 'verses -l en')
+-l [language code]  language selection (ex: 'ayat -l en')
 -t                  english transliteration
--v   [verses]       verse list (ex: 'verses -v 1:23 6:24 5:4-7')
+-v   [ayat]       verse list (ex: 'ayat -v 1:23 6:24 5:4-7')
 -s [query]          search for query (can be regex)
 -sc [query]         search for query (can be regex)(colored)
 
@@ -34,7 +34,7 @@ pip3 install wget
 ## Example Usage
 
 ```bash
-verses -l en -s "pray" -v 2:1-100, 3:1-30
+ayat -l en -s "pray" -v 2:1-100, 3:1-30
 ```
 ```
 1: (2:3) Who believe in the unseen, establish prayer, and spend out of what We have provided for them,
@@ -52,6 +52,6 @@ To install it on a unix system simply run
 sudo make install
 ```
 
-## Fzverse
+## fzayat
 
-If you have `fzf` installed you can also use the `fzverse` script to search through the english corpus with fzf
+If you have `fzf` installed you can also use the `fzayat` script to search through the english corpus with fzf
