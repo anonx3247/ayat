@@ -1,0 +1,2 @@
+#!/bin/sh
+verses -l en -v all | fzf

@@ -51,3 +51,7 @@ To install it on a unix system simply run
 ```bash
 sudo make install
 ```
+
+## Fzverse
+
+If you have `fzf` installed you can also use the `fzverse` script to search through the english corpus with fzf
