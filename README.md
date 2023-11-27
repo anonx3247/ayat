@@ -52,6 +52,8 @@ To install it on a unix system simply run
 sudo make install
 ```
 
+Otherwise you can simply sun the scripts from within the directory.
+
 ## fzayat
 
 If you have `fzf` installed you can also use the `fzayat` script to search through the english corpus with fzf
